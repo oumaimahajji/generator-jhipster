@@ -27,9 +27,12 @@ import { <%= entityAngularName %>DeleteDialogComponent } from './delete/<%= enti
 <%_ } _%>
 import { <%= entityAngularName %>RoutingModule } from './route/<%= entityFileName %>-routing.module';
 
+import { QRCodeModule } from 'angular2-qrcode';
+
 @NgModule({
     imports: [
         SharedModule,
+	QRCodeModule,
         <%= entityAngularName %>RoutingModule,
     ],
     declarations: [
